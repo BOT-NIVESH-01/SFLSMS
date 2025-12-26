@@ -1,4 +1,3 @@
-
 ---
 
 # 🎓 Smart Faculty Leave & Substitution Management System
@@ -18,25 +17,26 @@ A **MERN stack web application** that streamlines faculty leave management and a
 
 ### 🔄 Smart Substitution Engine
 
-* Scans master timetable automatically
-* Suggests available faculty per date & slot
-* Prevents scheduling conflicts
+- Scans master timetable automatically
+- Suggests available faculty per date & slot
+- Prevents scheduling conflicts
 
 ### 👥 Role-Based Access
 
-* **Faculty Dashboard**
-* **HOD Dashboard**
-* **Admin Dashboard**
+- **Faculty Dashboard**
+- **HOD Dashboard**
+- **Admin Dashboard**
 
 ### 📝 Leave Management
 
-* Apply for **Casual**, **Medical**, or **Personal** leave
-* **Medical Leave Rules**:
+- Apply for **Casual**, **Medical**, or **Personal** leave
+- **Medical Leave Rules**:
 
-  * Minimum **10-day duration**
-  * Can be submitted without substitutes
-  * Admin can force-assign later
-* **One Leave Per Day** validation
+  - Minimum **10-day duration**
+  - Can be submitted without substitutes
+  - Admin can force-assign later
+
+- **One Leave Per Day** validation
 
 ### ⚙️ Automated Workflow
 
@@ -47,18 +47,18 @@ A **MERN stack web application** that streamlines faculty leave management and a
 
 ### 🛠️ Admin Capabilities
 
-* **Force Assign** faculty in emergencies
-* Real-time faculty availability overview
-* Leave approval & balance deduction
+- **Force Assign** faculty in emergencies
+- Real-time faculty availability overview
+- Leave approval & balance deduction
 
 ### 📅 Dynamic Timetable
 
-* Visual class schedules
-* Supports breaks and lunch periods
+- Visual class schedules
+- Supports breaks and lunch periods
 
 ### 🔔 Notifications
 
-* Real-time toast alerts for actions & errors
+- Real-time toast alerts for actions & errors
 
 ---
 
@@ -66,24 +66,24 @@ A **MERN stack web application** that streamlines faculty leave management and a
 
 **Frontend**
 
-* React.js
-* Vite
-* Axios
-* Lucide React
-* CSS3
+- React.js
+- Vite
+- Axios
+- Lucide React
+- CSS3
 
 **Backend**
 
-* Node.js
-* Express.js
+- Node.js
+- Express.js
 
 **Database**
 
-* MongoDB (Mongoose ODM)
+- MongoDB (Mongoose ODM)
 
 **Authentication**
 
-* JWT (JSON Web Tokens)
+- JWT (JSON Web Tokens)
 
 ---
 
@@ -111,8 +111,8 @@ smart-faculty-leave-system/
 
 ### 📌 Prerequisites
 
-* Node.js **v14+**
-* MongoDB (Local or Atlas)
+- Node.js **v14+**
+- MongoDB (Local or Atlas)
 
 ---
 
@@ -186,20 +186,18 @@ npm run dev
 
 ### 🔐 Authentication
 
-* `POST /api/auth/login` – Login & get token
-* `GET /api/auth/me` – Get current user
+- `POST /api/auth/login` – Login & get token
+- `GET /api/auth/me` – Get current user
 
 ### 📊 Data
 
-* `GET /api/data/users` – All users
-* `GET /api/data/timetable` – Master timetable (`?date=YYYY-MM-DD`)
-* `GET /api/data/leaves` – Leave history
-* `POST /api/data/leaves` – Apply leave
-* `PATCH /api/data/leaves/:id/substitute` – Accept/Reject substitute
-* `PATCH /api/data/leaves/:id/force-substitute` – Force assign (Admin)
-* `PATCH /api/data/leaves/:id/status` – Final approval
-
----
+- `GET /api/data/users` – All users
+- `GET /api/data/timetable` – Master timetable (`?date=YYYY-MM-DD`)
+- `GET /api/data/leaves` – Leave history
+- `POST /api/data/leaves` – Apply leave
+- `PATCH /api/data/leaves/:id/substitute` – Accept/Reject substitute
+- `PATCH /api/data/leaves/:id/force-substitute` – Force assign (Admin)
+- `PATCH /api/data/leaves/:id/status` – Final approval
 
 ## 🛡️ License
 
